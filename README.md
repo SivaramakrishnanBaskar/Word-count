@@ -10,19 +10,19 @@ Anaconda - Python 3.7
 ## ALGORITHM: 
 
 ### Step 1:
-Create a txt file to count the number of word in that file.
+Open file in read mode.
 
 ### Step 2: 
-Open the txt file in read mode using open().
+Read the text using read funcion.
 
 ### Step 3: 
 Using split() function to split the words in the txt file and count it.
 
 ### Step 4:  
-Save the python program using .py extention.
+The length of the split list should be equal to the number of words in the text file.
 
 ### Step 5: 
-Run the python program in terminal to get the output.
+Now give print().
 
 ### Step 6: 
 Number of words in the txt file is displayed as the output.
