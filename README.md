@@ -10,22 +10,22 @@ Anaconda - Python 3.7
 ## ALGORITHM: 
 
 ### Step 1:
-Open file in read mode.
+Open the file in read mode and handle it in test mood.
 
 ### Step 2: 
-Read the text using read funcion.
+Read the text using read() function.
 
 ### Step 3: 
-Using split() function to split the words in the txt file and count it.
+Split the text using space separator.We assume that words in a sentance are separted by a space character.
 
 ### Step 4:  
-The length of the split list should be equal to the number of words in the text file.
+The length of the split list should equal the numbers of words in the test file.
 
 ### Step 5: 
-Now give print().
+You can refine the count by cleaning the string prior to splitting or validating the words after splitting.
 
 ### Step 6: 
-Number of words in the txt file is displayed as the output.
+End the program.
 
 ## PROGRAM:
 ```
@@ -33,16 +33,25 @@ Developed By: Sivaramakrishnan B
 Register No: 212222110044
 
 num_words =0
-with open('python.py','r') as file1:
+file1 = open("text.txt", "r")
+with open('text.txt','r') as file1:
     for i in file1:
         word =i.split()
         num_words += len(word)
-print("Number of words={0}".format(num_words))
+print("Number of words={}".format(num_words))
 
 ```
 
+## TEXT FILE:
+```
+with open("text.txt",'w')as fp:
+  fp.write("Hello World")
+  fp.write("\nWelcome to Python")
+  fp.write("\nHave a Good Day")
+```
+
 ### OUTPUT:
-![image](https://github.com/SivaramakrishnanBaskar/Word-count/assets/119476322/ae6370fc-fcf5-4a4d-8389-2364186e90c4)
+![image](https://github.com/SivaramakrishnanBaskar/Word-count/assets/119476322/e7ab2b6a-833f-4041-b089-48a059c2ca39)
 
 ## RESULT:
 Thus the program is written to find the word count from a text.
